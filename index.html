@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Software de Facturación Electrónica y Gestión Comercial Perú - FacturaAlToque.pe</title>        <meta name="author" content="FacturaalToque.pe">
+        <meta name="description" content="Sistema de Facturación Electrónica Autorizado por SUNAT para emitir documentos electronicos. Hemos creado un sistema de facturación fácil y gestión comercial amigable e intuitivo.">
+        <meta name="keywords" content="facturacion, sistema, sistema facturacion, comprobantes, certificado, pse, facturacion electronic, modulos de compras, inventario, contabilidad">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Header Start -->
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4">
+                            <div class="brand">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="topbar">
+                                <div class="topbar-col">
+                                    <a href="tel:+51 934895927"><i class="fa fa-phone-alt"></i>+51 934895927</a>
+                                </div>
+                                <div class="topbar-col">
+                                    <a href="mailto:info@example.com"><i class="fa fa-envelope"></i>info@example.com</a>
+                                </div>
+                                <div class="topbar-col">
+                                    <div class="topbar-social">
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar navbar-expand-lg bg-light navbar-light">
+                                <a href="#" class="navbar-brand">MENU</a>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                    <div class="navbar-nav ml-auto">
+                                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                                        <a onclick="$('#plans').animatescroll({scrollSpeed:3000,easing:'easeOutSine'});" style="cursor: pointer;" class="nav-item nav-link">Precios</a>
+                                        <a onclick="$('#faqs').animatescroll({scrollSpeed:3000,easing:'easeOutSine'});" style="cursor: pointer;" class="nav-item nav-link">FaQs</a>
+                                        <a href="https://facturaaltoque.pe/sys_fact/login" class="btn btn-success"><i class="fa fa-door-open"></i>Ingresar al Sistema</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header End-->
+            <!-- Hero Start -->
+            <div class="hero">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <h2>Registrate y empieza a usar nuestro Servicio de </h2>
+                            <h2><span>Facturación Electrónica.</span></h2>
+                            <p>Hemos desarrollado un sistema amigable y fácil de usar pensado en las micro y pequeñas empresas. Más de 250 micro y pequeñas empresas confian en nosotros.</p>
+                            <a class="btn btn-lg btn-success" target="_blank" href="https://api.whatsapp.com/send?phone=+51934895927&text=Solicito%20Informaci%C3%B3n%20sobre%20el%20Servicio%20de%20Facturaci%C3%B3n%20Electr%C3%B3nica">Contáctanos para más información</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="animate__animated animate__fadeInRight" src="img/phone.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero End -->
+            <!-- About End -->
+            <div class="team">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="section-header">
+                            <h2>Accederás a un sistema fácil de usar, seguro y económico.</h2>
+                            <p>Con nuestro sistema de Facturación Electrónica tendrás 
+                                acceso a los siguientes módulos:
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-sm-6 col-lg-3 ">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/icons/ventas.png" alt="Team">
+                                </div>
+                                <div class="team-text">
+                                    <h3>Módulo de Ventas</h3>
+                                    <br>
+                                    <p class="text-justify">Nuestro sistema te permitirá emitir todos los comprobantes 
+                                        electrónicos que pide la SUNAT(Facturas, Boletas, Notas de Crédito y Débito).
+                                        También podrás emitir Notas de Venta y Proformas a tus clientes. 
+                                        Tendrás acceso a reportes de ventas graficos y estadisticos en donde podrás
+                                         ver las ventas por rango de fechas, por mes, por año por sucursal y por vendedor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 ">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/icons/compras.svg" style="height: 14rem;" alt="Team">
+                                </div>
+                                <div class="team-text">
+                                    <h3>Módulo de Compras</h3>
+                                    <br>
+                                    <p class="text-justify">Nuestro sistema te permitirá gestionar las compras
+                                        de tus proveedores y controlar el inventario de tu 
+                                        negocio. Tendras accesos a reportes de compras 
+                                        gráficos y estadisticos en donde podrás ver las 
+                                        compras por rango de fechas, por mes, por año y 
+                                        por sucursal.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3 ">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/icons/contabilidad.png"  alt="Team">
+                                </div>
+                                <div class="team-text">
+                                    <h3>Módulo de Contabilidad</h3>
+                                    <br>
+                                    <p class="text-justify">Nuestro sistema te permitirá generar los libros 
+                                        electrónicos de compras y ventas en formato TXT
+                                        para la declaración en el programa de Libros 
+                                        Electrónicos (PLE). También podrás exportar al excel
+                                         los libros electrónicos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+            <!-- Service Start -->
+            <div class="service">
+                <div class="container-fluid text-center">
+                    <h2>Nuestro sistema cuenta con herramientas <br>que te harán la vida más fácil.</h2>
+                    <p>Todas las funcionalidades de nuestro sistema estan pensadas en hacerte la <br>
+                        vida mas fácil. Algunas de las herramientas y funcionalides que hemos
+                        desarrollado son las siguientes:</p>
+                
+                    <div class="section-header">
+                    </div>
+                    <div class="row justify-content-md-center mb-4">
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div class="serv-section-2">
+                                <div class="serv-section-2-icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="serv-section-desc">
+                                    <h4>Integración con RENIEC Y SUNAT</h4>
+                                </div>
+                                <div class="section-heading-line-left"></div>
+                                <p>Nuestro sistema está integrado con SUNAT Y RENIEC para la búsqueda por RUC O DNI. 
+                                Ya no tendrás que registrar todos los datos de tus clientes o proveedores, 
+                                el sistema lo hará por ti.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div class="serv-section-2">
+                                <div class="serv-section-2-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <div class="serv-section-desc">
+                                    <h4>Genera Guías de Remisión Electrónica</h4>
+                                </div>
+                                <div class="section-heading-line-left"></div>
+                                <p> Permite emitir 
+                                    Guias de Remisión Electrónicas. 
+                                    Permiten sustentar el traslado de mercaderia. 
+                                    Podrás generarla a partir de una factura, boleta, 
+                                    nota de venta o cotización.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center"> 
+                        <div class="col-md-6 col-sm-12 col-12">
+                            <div class="serv-section-2">
+                                <div class="serv-section-2-icon">
+                                    <i class="fas fa-clipboard fa-5x"></i>
+                                </div>
+                                <div class="serv-section-desc">
+                                    <h4>Emite Proformas a tus Clientes</h4>
+                                </div>
+                                <div class="section-heading-line-left"></div>
+                                <p> Nuestro sistema te permite emitir proformas a tus clientes. 
+                                    Si una proforma ha sido confirmada por tu cliente para venta,
+                                    ya no tendrás que volver a registrar todos los datos nuevamente. 
+                                    Podrás convertir tu proforma a una factura, boleta, 
+                                    nota de venta o guía de remisión de manera rápida y sencilla
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="serv-section-2">
+                                <div class="serv-section-2-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div class="serv-section-desc">
+                                    <h4>Control de Ventas a Crédito</h4>
+                                </div>
+                                <div class="section-heading-line-left"></div>
+                                <p> Nuestro sistema cuenta con el módulo de cuentas por cobrar. Podrás emitir ventas al crédito
+                                    y llevar un control de las deudas que tus clientes mantinenen con tu empresa. 
+                                    Además de ello nuestro sistema te permite registrar 
+                                   y ver las abonos que tus clientes te realizan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+            <div id="particles-js" class="inventario">
+                <div class="container-fluid text-center">
+                    <div class="row">
+                        <div class="col-lg-12 p-5 text-white">
+                            <h2 >Contrala el inventario de tu negocio desde cualquier dispositivo.</h2>
+                            <p>Nuestro módulo de inventario te permitirá gestionar y llevar un control
+                                exacto del inventario de tu negocio. <br>Podrás registrar ingresos y salidas
+                                de mercaderia. Asimismo si tu negocio tiene varias sucursales <br>nuestro sistema
+                                te permitirá realizar traslados entre locales.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-3 mb-4">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <img src="img/truck.png" class="rounded-circle circle-inventary">
+                                    <br>
+                                    <br>
+                                    <h5 class="card-title">Ingresos, Salidas y Traslados entre Almacenes</h5>
+                                    <p class="card-text text-center">
+                                      Podrás registrar entradas y salidas de mercadería. Asimismo también podrás realizar traslados 
+                                      de mercaderia entre los almacenes de tu negocio.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/kardex.png" class="rounded-circle circle-inventary">
+                                    <br>
+                                    <br>
+                                    <h5 class="card-title">Kardex</h5>
+                                    <p class="card-text text-center">
+                                      Tendrás acceso a un reporte de kardex por producto,
+                                       por sucursal y en un determinado rango de fechas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <img src="img/kardex.png" class="rounded-circle circle-inventary">
+                                    <br>
+                                    <br>
+                                    <h5 class="card-title">Importación de Productos al sistema</h5>
+                                    <p class="card-text text-center">
+                                      Si tu negocio cuenta con un listado grande de 
+                                      productos, podrás utilizar nuestra herramienta de 
+                                      importación con la cuál podrás registrar hasta 10
+                                       mil productos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="features mb-5">
+                <div class="container">
+                    <h2 class="text-center">Ventajas</h2>
+                    <p class="text-center">Alguanas de las ventajas y funcionalidades a las que usted puede tener acceso:</p>
+                
+                    <div class="section-header">
+                    </div>
+                    <div class="row justify-content-md-center">
+                        
+                        <div class="col-lg-4" style="padding-top: 100px;">
+                            <div class="row mb-5">
+                                <div class="col-lg-10 col-sm-12 text-center">
+                                    <h4>Actualizaciones automáticas</h4>
+                                    <p>
+                                        Mejoras continuas para adaptarnos a las necesidades.
+                                    </p>
+                                </div>
+                                <div class="col-lg-2 col-sm-12 text-center">
+                                    <i class="fas fa-download fa-3x mt-2"></i>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-10 col-sm-12 text-center">
+                                    <h4>Control de Ventas</h4>
+                                    <p>
+                                        Gestiona las ventas a crédito y facilita el proceso de cobro
+                                    </p>
+                                </div>
+                                <div class="col-lg-2 col-sm-12 text-center">
+                                    <i class="fas fa-dollar-sign fa-3x mt-2"></i>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-10 col-sm-12 text-center">
+                                    <h4>Gestión de proformas</h4>
+                                    <p>
+                                        Convierte tus proformas en facturas, notas de venta etc
+                                    </p>
+                                </div>
+                                <div class="col-lg-2 col-sm-12 text-center">
+                                    <i class="fas fa-clipboard fa-3x mt-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <img src="img/phone.png" alt="">
+                        </div>
+                        <div class="col-lg-4" style="padding-top: 100px;">
+                            <div class="row mb-5">
+                                <div class="col-lg-2 col-sm-12 text-center">
+                                    <i class="fas fa-wifi fa-3x mt-2"></i>
+                                </div>
+                                <div class="col-lg-10 col-sm-12 text-center">
+                                    <h4 class="pl-2">Acceso a través de internet</h4>
+                                    <p>
+                                        Sólo necesitas una conexión a internet para gestionar tu negocio.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-2 col-sm-12 text-center">
+                                    <i class="fas fa-adjust fa-3x mt-2"></i>
+                                </div>
+                                <div class="col-lg-10 col-sm-12 text-center">
+                                    <h4>Adaptable</h4>
+                                    <p>
+                                        Implentaciones en los rubros avícola, ferretería transporte y otros
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-lg-2 col-sm-12 text-center">
+                                    <i class="fas fa-download fa-3x mt-2"></i>
+                                </div>
+                                <div class="col-lg-10 col-sm-12 text-center">
+                                    <h4>Soporte técnico </h4>
+                                    <p>
+                                        Nuestro equipo está disponible para brindar soluciones precisas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Info End -->
+            <section id="particles-js2" class="section-padding section-services-4">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-4">
+                            <div class="card" style="margin-top: -50px;">
+                                <img class="card-img-top" src="img/icons/api.jpg" width="17.3rem" height="210px"  alt="Card image cap">
+                                <div class="card-body ">
+                                  <h5 class="card-title text-center">INTEGRACIÓN VÍA APIREST</h5>
+                                  <p class="card-text text-justify">Hemos implementado la funcionalidad de integración vía ApiRest para
+                                       que puedas integrar tiendas virtuales y/o aplicaciones. Pudiendo enviar facturas 
+                                       y boletas para que puedas reflejarse en tu sistema de gestión empresarial y puedas 
+                                        tu almacén.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="margin-top: -50px;">
+                                <img class="card-img-top" src="img/icons/suport.jpg" width="17.3rem" height="210px" alt="Card image cap">
+                                <div class="card-body ">
+                                  <h5 class="card-title text-center">UN ASESOR PERSONAL PARA TU EMPRESA</h5>
+                                  <p class="card-text text-justify">¡Realmente queremos estar pendientes de ti!... es por ello
+                                       que te asignaremos un asesor para que puedas consultar y solicitar información sobre 
+                                       todas las dudas y/o preguntas que tengas. Además podrás coordinar con tu asesor
+                                        la creación de reportes exclusivos y personalizados para tu cuenta.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card" style="margin-top: -50px;">
+                                <img class="card-img-top" src="img/icons/multi.jpg" width="16rem" height="220px" alt="Card image cap">
+                                <div class="card-body ">
+                                  <h5 class="card-title text-center">MULTIPLES DISPOSITIVOS</h5>
+                                  <p class="card-text text-justify">El sistema se adapta fácilmente a múltiples dispositivos
+                                      , tanto computadoras de escritorio, laptops, tables y celulares.
+                                       Tendrás toda la información de tu Empresa en tus Manos!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Customers -->
+            <div class="testimonial">
+                <div class="container">
+                    <div class="section-header">
+                        <p>CONOCE A ALGUNOS DE NUESTROS CLIENTES</p>
+                        <h2>Clientes & Socios</h2>
+                        <p>
+                            Estamos comprometidos con nuestros clientes, y es por ello que
+                            te asignaremos un asesor comercial para que te acompañe en
+                            todo el proceso de aprendizaje y emisión de tus comprobantes 
+                            electrónicos...
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider">
+                                <div>
+                                    <img src="img/customers/100ttbien.jpeg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/autoservice.jpg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/casa-del-funko.png" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/centro_medico_san_roque.jpeg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/chanchita.png" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/chikitienda.png" width="150px" alt="">
+                                </div>
+
+                                <div>
+                                    <img src="img/customers/compuplanet.jpeg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/dersa.jpeg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/emerldent.jpg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/inversiones_jch.jpeg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/julls.jpeg" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/centro_medico_san_roque.jpeg" width="150px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider">
+                                <div>
+                                    <img src="img/customers/la_casa_del_pintor.png" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/leon.jpg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/libelula.jpg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/lima_tienda.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/maxiloX.jpg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/meson_inca.jpeg" width="150px" alt="">
+                                </div> 
+                                
+                                <div>
+                                    <img src="img/customers/muelle310.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/picaflor.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/san_isidro_fial.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/SANICER.png" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/sergesol.png" width="150px" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="slider">
+                                <div>
+                                    <img src="img/customers/tecelec.png" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/TEK.jpg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/transportes_linea.png" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/VALAHA.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/VELIZ.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/compuplanet.jpeg" width="150px" alt="">
+                                </div> 
+
+
+                                <div>
+                                    <img src="img/customers/100ttbien.jpeg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/meson_inca.jpeg" width="150px" alt="">
+                                </div>  
+                                <div>
+                                    <img src="img/customers/chikitienda.png" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/chanchita.png" width="150px" alt="">
+                                </div>
+                                <div>
+                                    <img src="img/customers/leon.jpg" width="150px" alt="">
+                                </div> 
+                                <div>
+                                    <img src="img/customers/autoservice.jpg" width="150px" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            
+            <!-- Customer End -->
+            <!-- Plans-->
+            <div id="plans" class="plans">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="text-gray">NUESTROS PLANES</p>
+                            <h1>Inicia hoy mismo con el sistema de
+                                Facturación Electrónica</h1>
+                        </div>
+                    </div>
+                    <div class="section-header"></div>
+                    <div class="btn-group mb-5" role="group">
+                        <button id="btnMensual"  onclick="changePlan('mensual')" type="button" class="btn btn-success">MENSUAL</button>
+                        <button id="btnAnual" onclick="changePlan('anual')" type="button" class="btn btn-secondary">ANUAL</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div id="plan-basico" class="card">
+                                <div class="card-body">
+                                    <h1 id="precio-uno" class="card-title font-weight-bold text-success">S/35</h1>
+                                    <h3 class="text-success">PLAN <br> BÁSICO</h3>
+                                    <p id="precio-uno-viejo" class="old-price">Antes S/.40</p>
+                                    <p class="descuento text-success text-hide">15% de descuento</p>
+                                    <br>
+                                    <ul class="text-left">
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Comprobantes Ilimitados</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Una Sucursal</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Un Almacén</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Un Usuario</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Módulo de Ventas</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Reportes Avanzados</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Búsqueda de RUC y DNI</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Módulo de Compras</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Búsqueda de Comprobantes</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Kardex Físico y Valorizado</li>
+                                        <li><i class="fa fa-check-circle mr-2 text-success"></i>Ingresos y Salidas de Almacén</li>
+                                        <li><i class="fa fa-times-circle mr-2 text-danger"></i>Traslado entre almacénes</li>
+                                        <li><i class="fa fa-times-circle mr-2 text-danger"></i>Generación de Guías de Remisión</li>
+                                        <li><i class="fa fa-times-circle mr-2 text-danger"></i>Cuentas por Cobrar</li>
+                                        <li><i class="fa fa-times-circle mr-2 text-danger"></i>Libro Electrónico de Compras</li>
+                                        <li><i class="fa fa-times-circle mr-2 text-danger"></i>Libro Electrónico de Ventas</li>
+                                    </ul>    
+                                   <a href="https://api.whatsapp.com/send?phone=+51934895927&text=Solicito%20Informaci%C3%B3n%20sobre%20el%20Servicio%20de%20Facturaci%C3%B3n%20Electr%C3%B3nica" class="btn btn-success">Contactarse</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="plan-emprendedor" class="card" >
+                                <div class="card-body">
+                                    <h1 id="precio-dos" class="card-title  font-weight-bold text-success">S/40</h1>                                 
+                                    <h3 class="text-success">PLAN <br> EMPRENDEDOR</h3>                               
+                                    <p id="precio-dos-viejo" class="old-price">Antes S/.50</p>
+                                    <p class="descuento text-success text-hide">15% de descuento</p>
+                                  <br>
+                                  <ul class="text-left">
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Comprobantes Ilimitados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Sucursales Ilimitadas</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Almacenes Ilimitadas</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Usuarios Ilimitados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Módulo de Ventas</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Reportes Avanzados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Búsqueda de RUC y DNI</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Módulo de Compras</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Búsqueda de Comprobantes</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Kardex Físico y Valorizado</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Ingresos y Salidas de Almacén</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Traslado entre almacénes</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Generación de Guías de Remisión</li>
+                                    <li><i class="fa fa-times-circle mr-2 text-danger"></i>Cuentas por Cobrar</li>
+                                    <li><i class="fa fa-times-circle mr-2 text-danger"></i>Libro Electrónico de Compras</li>
+                                    <li><i class="fa fa-times-circle mr-2 text-danger"></i>Libro Electrónico de Ventas</li>
+                                  </ul><br>
+                                  <a href="https://api.whatsapp.com/send?phone=+51934895927&text=Solicito%20Informaci%C3%B3n%20sobre%20el%20Servicio%20de%20Facturaci%C3%B3n%20Electr%C3%B3nica" class="btn btn-success">Contactarse</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div id="plan-empresarial" class="card">
+                                <div class="card-body">
+                                    <h1 id="precio-tres" class="card-title font-weight-bold text-success">S/50</h1>                                 
+                                    <h3 class="text-success">PLAN <br> EMPRESARIAL</h3>                          
+                                    <p id="precio-tres-viejo" class="old-price">Antes S/.60</p>
+                                    <p class="descuento text-success text-hide">15% de descuento</p>
+                                  <br>
+                                  <ul class="text-left">
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Comprobantes Ilimitados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Sucursales ilimitadas</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Almacénes ilimitados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Usuarios ilimitados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Módulo de Ventas</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Reportes Avanzados</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Búsqueda de RUC y DNI</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Módulo de Compras</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Búsqueda de Comprobantes</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Kardex Físico y Valorizado</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Ingresos y Salidas de Almacén</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Traslado entre almacénes</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Generación de Guías de Remisión</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Cuentas por Cobrar</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Libro Electrónico de Compras</li>
+                                    <li><i class="fa fa-check-circle mr-2 text-success"></i>Libro Electrónico de Ventas</li>
+                                  </ul><br>
+                                 <a href="https://api.whatsapp.com/send?phone=+51934895927&text=Solicito%20Informaci%C3%B3n%20sobre%20el%20Servicio%20de%20Facturaci%C3%B3n%20Electr%C3%B3nica" class="btn btn-success">Contactarse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>    
+            <!--Plans-->
+            <!-- FAQs Start -->
+            <div id="faqs" class="faqs">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="section-title">Preguntas Frecuentes</h2>
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                            ¿En que dispositivos puedo usar el sistema?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Nuestro sistema es multidispositivo, puedes utilizarlo en una tablet, computadora, 
+                                            smartphone(celular) o laptop, siempre que cuente con acceso a internet.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                            ¿Necesito un certificado digital para poder usar el sistema?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Si, Sin embargo debes tener en cuenta que SUNAT otorga a las Micro y Pequeñas empresas 
+                                            la posibilidad de obtener un certificado digital tributario gratis por un periodo de 
+                                            3 años. Dicho tramite se realiza desde el portal de SUNAT.                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                            ¿Tendré que Pagar Costos de Instalación y/o Comprar Equipos Especiales?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            No tendrás que pagar costos de instalación y tampoco es necesario comprar equipos costosos 
+                                            para iniciar con la emisión de tus comprobantes electrónicos.                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                            ¿Que pasa si SUNAT modifica las normas de facturación electronica?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            El pago por nuestro servicio en cualquiera de nuestros planes te permite acceder a todas las 
+                                            actualizaciones, asegurando que cumplas los estandares de SUNAT.                                        
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- <a class="btn" href="">Ask more</a> -->
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/faqs.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->  
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-about">
+                                <h2>Nostros</h2>
+                                <p>Estamos aquí para ayudarte. Te asignaremos un asesor personal para que te guía 
+                                en todo el proceso de aprendizaje y/o puedas consultar 
+                                con el cualquier duda que tengas.</p>
+                                <br>
+                                <!-- <p><i class="fa fa-envelope"></i>info@example.com</p> -->
+                            </div>
+                        </div>    
+                        <div class="col-md-4">
+                            <div class="footer-about">
+                                <h2>Dirección</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>Mz H Lote 3 2do Piso San Andres 5ta etapa - Trujillo - Perú</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-about">
+                                <h2>Soporte Técnico</h2>
+                                <p><i class="fa fa-phone-alt"></i>+51 934895927</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>&copy; Copyright <span id="year"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/particles.js/particles.min.js"></script>
+        <script src="lib/animatescroll.js/animatescroll.min.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
